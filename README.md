@@ -31,3 +31,25 @@ Or install globally:
 npm install -g @khalednoaman/cli-dashboard
 dashboard --refresh 1000 --theme dark
 ```
+
+
+## Overview
+Beautiful terminal dashboard showing CPU, RAM, disk, network, and Git stats
+
+## Architecture
+Data collectors -> Formatter -> Rich terminal renderer
+
+## Tech Stack
+TypeScript, blessed (terminal UI)
+
+## How It Works
+Polls system metrics via os/process APIs, renders with blessed terminal widgets
+
+## Project Structure
+src/ (collectors/, widgets/, renderer.ts), examples/, tests/
+
+## Screenshots
+ASCII dashboard mockup
+
+## Future
+Custom widget plugins, remote monitoring, config file, themes
